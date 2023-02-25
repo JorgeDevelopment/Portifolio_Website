@@ -1,0 +1,33 @@
+body{
+    background: rgb(178, 245, 111);
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    size: 200px;
+}
+#start{
+    width: 300px;
+    height: 75px;
+    size: 200px;
+}
+#gameContainer{
+    text-align: center;
+}
+#gameboard{
+    border : 3px solid;
+
+}
+#score{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+}
+#reset{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    width: 100px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
