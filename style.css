@@ -1,3 +1,11 @@
+:root{
+    --bg01: linear-gradient(#060808,#3f0404,#262626);
+    --bg-color:#1f242d;
+    --text-color:#fff;
+    --name-color:#ff2525;
+    --main-color:#0ef;
+    --footer-color:#262626;
+}
 *{
     margin: 0;
     padding: 0;
@@ -8,16 +16,10 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    background:linear-gradient( #5c0000,#003d41 );
-    color:#fff;
+    background:var(--bg01);
+    color:var(--text-color);
 }
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/Main.png);
-    background-size: cover;
-    background-position: center;
-}
+
 .container{
     padding: 10px 10%;
 }
@@ -46,7 +48,7 @@ nav ul li:hover{
     transform: scale(1.1);
 }
 nav ul li a{
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 17px;
     position: relative;
@@ -55,7 +57,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #00f7ff;
+    background:var(--main-color);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,28 +66,40 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-    width: 100%;
-    height: 100vh;
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10% 40px ;
+    padding-top: 100px;
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
-    font-weight: 300;
+.home-img img{
+    width: 30vw;
 }
-.header-text h1 span{
-    color: #00f7ff;
-    font-weight: 600;
+.home-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
 }
-
-
+.home-content h2:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+.home-content h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.home-content span{
+    color: var(--main-color);
+}
+.home-content h2{
+    font-size: 3rem;
+}
+.home-content p{
+    font-size: 1.6rem;
+}
 /*.......about......*/
-#abour{
+#about{
     padding: 80px 0;
-    color: #ababab;
+    color: var(--text-color);
 }
 .row{
     display: flex;
@@ -97,20 +111,22 @@ nav ul li a:hover::after{
     
 }
 .ab-cl1 img{
-    width: 100%;
+    width: 27vw;
     border-radius: 15px;
 }
 .ab-cl2{
     flex-basis: 60%;
 }
+
 .sub{
     font-size: 50px;
     font-weight: 600;
-    color: white;
+    color: var(--text-color);
+    
 }
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px
+    margin: 20px 0 40px;
 }
 .tab-links{
     margin-right: 50px;
@@ -124,7 +140,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #00f7ff;
+    background:var(--main-color);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -139,12 +155,12 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-cont span{
-    color: #00b5bb;
+    color:var(--main-color);
     font-size: 14px;
 }
 .tab-links:hover{
     transform: translateY(-3px);
-    color: #00a8ad;
+    color: var(--main-color);
 }
 .tab-cont{
     display: none;
@@ -186,13 +202,13 @@ nav ul li a:hover::after{
 }
 .serv-list div a{
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .serv-list div:hover{
-    background: linear-gradient(rgba(0,0,0,0.6), #00f7ff);
+    background: linear-gradient(rgba(0,0,0,0.6), var(--main-color));
     transform: translateY(-10px);
 }
 
@@ -222,7 +238,7 @@ nav ul li a:hover::after{
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6), #00f7ff);
+  background: linear-gradient(rgba(0,0,0,0.6),#00f7ff);
   border-radius: 10px;  
   position: absolute;
   left: 0;
@@ -274,6 +290,8 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #049196;
     color: rgba(255, 255, 255, 0.76);
+    box-shadow: 0 0 0.5rem var(--main-color);
+    border-radius: 15px;
 }
 
 /*Contactar*/
@@ -347,20 +365,43 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+}
+
+.top-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    padding-top:10px ;
+    background: var(--main-color);
+    cursor: pointer;
+}
+.top-icon:hover{
+    box-shadow: 0 0 0.5rem var(--main-color);
+}
+.top-icon a{
+    color: var(--text-color);
+    text-decoration: none;
 }
 nav .fas{
     display: none;
 }
 /*small screens*/
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/About.png);
+    .home{
+        background-image: url(images/.png);
+        background-repeat: no-repeat;
     }
-    .header-text {
+    .home-content{
         margin-top: 100%;
         font-size: 16px;
+        flex-basis: 35%;
     }
-    .header-text h1{
+    .home-content h1{
         font-size: 30px;
     }
     nav .fas{
@@ -368,7 +409,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #00f7ff;
+        background: var(--main-color);
         position: fixed;
         top: 0;
         right: -200px;
@@ -418,6 +459,10 @@ nav .fas{
     .copyright{
         flex-basis: 100%;
         font-size: 14px;
+    }
+    .copyright a{
+        border: 1px solid var(--text-color);
+        border-radius: 50%;
     }
 }
 #msg{

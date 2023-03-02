@@ -11,31 +11,39 @@
 <body>
 
     <!--header-->
-    <div id="header">
+    <header id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Principal</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#trabalhos">Trabalhos</a></li>
-                    <li><a href="#contact">Contactos</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#trabalhos">Portifolio</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                     <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
-            
-            <div class="header-text">
-                <p>Olá</p>
-                <h1>Chamo-me <span>Jorge</span>.</h1>
-                
-            </div>
-            
         </div>
             
+    </header>
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, i'm</h3>
+        <h1>Jorge Manjate</h1>
+        <h2>And i'm a <span>Web developer</span></h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur asperiores maxime
+             repudiandae quasi facere nostrum nam temporibus soluta rem. Eum voluptatibus sequi,
+             aspernatur impedit sunt quo nulla maxime voluptate at.
+        </p>
     </div>
+    <div class="home-img">
+        <img src="images/Main.png" alt="">
+    </div>
+</section>
 
+</section>
     <!--about-->
     <div id="about">
         <div class="container">
@@ -44,14 +52,13 @@
                     <img src="images/About.png" alt="">
                 </div>
                 <div class="ab-cl2">
-                    <h1 class="sub">Sobre mim</h1>
-                    <p>Graduado em Administração de Sistema de Informação 
-                        No Instituto de Transportes e Comunicações, tendo  
-                        descobeto a paixao pela programacao no decorrer da 
-                        formacao, comecando por programar em Java, e posterirormente
-                        descoberto o Desenvolvimento Web, actualmente estou no inicio
-                        de carreira na area do Desenvolvimento Web, e almejo me profissionalizar
-                        na criacao de paginas Web, aplicacoes Web, aplicacoes moveis e desktop apps.
+                    <h1 class="sub">About</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa beatae 
+                        distinctio vitae praesentium alias facilis. Accusamus quos dolorum vitae
+                         earum. Ad veniam eum ipsum commodi, eveniet tempora consequatur quod
+                          quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                          Nam dolorum officiis, corporis suscipit et aspernatur. Quo quidem eaque voluptates 
+                        mollitia vero ducimus nam nihil? Dolores dolor delectus facere tempora magni.
                     </p>
                     <p></p>
                     <div class="tab-titles">
@@ -88,12 +95,12 @@
     <!--Services-->
     <div id="services">
         <div class="container">
-            <h1 class="sub">Meus Servicos</h1> 
+            <h1 class="sub">Services</h1> 
             <div class="serv-list">
                 <div class="card">
                     <i class="fas fa-code"></i>
                     <h2>Web design</h2>
-                    <p>design de paginas e aplicacoes web</p>
+                    <p>Web pages and apps design</p>
                     <a href="#">Ver mais...</a>
                 </div>
                 <div class="card">
@@ -110,7 +117,7 @@
                 </div>
                 <div class="card">
                     <i class="fa-solid fa-music"></i>
-                    <h2>Producao musical</h2>
+                    <h2>Music Production</h2>
                     <p>Direcionado para o genero da musica eletronica...</p>
                     <a href="#">Ver mais...</a>
                 </div>
@@ -120,10 +127,10 @@
     <!--Trabalhos-->
     <div id="trabalhos">
         <div class="container">
-            <h1 class="sub">Meus trabalhos</h1>
+            <h1 class="sub">Portifolio</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="">
+                    <img src="images/About.png">
                     <div class="layer">
                         <h3>A game of PONG</h3>
                         <p>Divercao infinita com este simples mas maravilhoso jogo de tenis de mesa</p>
@@ -131,7 +138,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="">
+                    <img src="images/About.png">
                     <div class="layer">
                         <h3>Music Player</h3>
                         <p>Music player app, for enjoying your best tracks</p>
@@ -139,7 +146,15 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="">
+                    <img src="images/About.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>apppppppppppp</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/About.png">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
                         <p>apppppppppppp</p>
@@ -155,7 +170,7 @@
         <div class="container">
             <div class="row">
                 <div class="left-cont">
-                    <h1 class="sub">Contactar</h1>
+                    <h1 class="sub">Contact</h1>
                     <p><i class="fas fa-paper-plane"></i> <a href="" class="email">jorgemjte@gmail.com</a></p>
                     <p><i class="fas fa-phone-square-alt"></i> +258 84 81 22 729</p>
                     <p><i class="fas fa-phone-square-alt"></i> +258 87 71 22 729</p>
@@ -180,7 +195,11 @@
             </div>
         </div>
         <div class="copyright">
-            <p>copyright Jorge Manjate. 2023 </p>
+            <p>Copyright; Jorge Manjate 2023 | All Rights Reserved </p>
+            <div class="top-icon">
+            <a href="#home"><i class="fas fa-solid fa-arrow-up"></i></a>
+
+            </div>
         </div>
     </div>
     <script src="js.js"></script>
