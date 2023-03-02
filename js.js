@@ -20,10 +20,5 @@ function closeMenu(){
 }
 
 const msg= document.getElementById("msg");
-var typed = new Typed(".jobs", {
-    strings:["Programador", "Designer", "UI/UX Designer"],
-    typespeed: 150,
-    backspeed: 150,
-    loop: true
-})
+
 
